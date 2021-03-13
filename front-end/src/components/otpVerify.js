@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles/style.module.css';
 import axios from 'axios';
-import dotenv from  'dotenv'
 const { REACT_APP_LOGIN_REGISTER_URL} = process.env;
 
 function OtpVerify(props) {
@@ -20,7 +19,7 @@ function OtpVerify(props) {
 	const confirmOtp = () => {
 		localStorage.setItem('phnNumber', `${value.phone}`)
 		axios
-			.post('http://localhost:8080/user-authenticate-service/verify-otp', {
+			.post('/user-authenticate-service/verify-otp', {
 				phnNumber: `${value.phone}`,
 				hash: `${value.hash}`,
 				otp: `${value.otp}`,

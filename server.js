@@ -19,7 +19,7 @@ const SMS_SECRET_KEY = process.env.SMS_SECRET_KEY;
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 app.use(express.json());
-app.use(cors({ origin: 'http://143.110.182.130:8081', credentials: true }));
+app.use(cors({ origin: 'http://139.59.38.45:8081', credentials: true }));
 app.use(cookieParser());
 
 gameSocket = null;

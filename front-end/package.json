@@ -2,6 +2,7 @@
   "name": "react-jwt-auth",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://143.110.182.130",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

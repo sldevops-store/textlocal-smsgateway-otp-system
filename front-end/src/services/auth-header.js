@@ -1,5 +1,4 @@
 import axios from "axios";
-import Cookies from 'js-cookie';
 //const cookies = new Cookies();
 
 class AuthHeader{
@@ -20,7 +19,7 @@ class AuthHeader{
       return accessToken;       // for Node.js Express back-end
     } else{
           axios
-            .post('http://localhost:8080/user-authenticate-service/get-refresh-token', {
+            .post('/user-authenticate-service/get-refresh-token', {
               withCredentials: true,
               refreshToken: refreshToken
             })

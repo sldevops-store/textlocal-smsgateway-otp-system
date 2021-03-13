@@ -11,21 +11,6 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
-    // UserService.getPublicContent().then(
-    //   response => {
-    //     this.setState({
-    //       content: response.data
-    //     });
-    //   },
-    //   error => {
-    //     this.setState({
-    //       content:
-    //         (error.response && error.response.data) ||
-    //         error.message ||
-    //         error.toString()
-    //     });
-    //   }
-    // );
 
     this.setState({
       content: "Home Page"

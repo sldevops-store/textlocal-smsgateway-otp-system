@@ -26,7 +26,7 @@ class AuthService {
 		}
 		if ((accessTokenExp < new Date().getTime()) && (refreshTokenExp > new Date().getTime())) {
 			axios
-				.post('http://localhost:8080/user-authenticate-service/get-refresh-token', {
+				.post('/user-authenticate-service/get-refresh-token', {
 					withCredentials: true,
           refreshToken: refreshToken
 				})

@@ -1,9 +1,7 @@
 require('dotenv').config();
 const jwt = require("jsonwebtoken");
 
-const SMS_SECRET_KEY = process.env.SMS_SECRET_KEY;
 const JWT_AUTH_TOKEN = process.env.JWT_AUTH_TOKEN;
-const JWT_REFRESH_TOKEN = process.env.JWT_REFRESH_TOKEN;
 
 function authenticateUser(req, res, next) {
 

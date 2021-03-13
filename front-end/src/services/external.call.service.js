@@ -1,8 +1,8 @@
 import axios from "axios";
 import AuthHeader from './auth-header';
 
-const API_DASHBOARD_URL = "http://localhost:8080/dashboard/";
-const API_USER_URL = "http://localhost:8080/users/";
+const API_DASHBOARD_URL = "/dashboard/";
+const API_USER_URL = "/users/";
 
 class ExternalCallService {
 

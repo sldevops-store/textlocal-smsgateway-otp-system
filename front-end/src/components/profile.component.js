@@ -17,9 +17,6 @@ export default class Profile extends Component {
 
   async componentDidMount() {
 
-    //var auth = await AuthService.isAuthenticated();
-    
-    //if (!auth) this.setState({ redirect: "/home" });
     ExternalCallService.getDashboardHome().then(res=>{
         this.setState({
           content: res.data,
