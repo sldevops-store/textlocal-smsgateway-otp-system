@@ -10,7 +10,7 @@ class ExternalCallService {
   getDashboardHome() {
     console.log('Dashboard Home');
     return axios
-        .get(API_DASHBOARD_URL + "home", { headers: {'x-access-token': AuthHeader.authHeader()} });
+        .get("https://139.59.38.45"+API_DASHBOARD_URL + "home", { headers: {'x-access-token': AuthHeader.authHeader()} });
         
   }
 
@@ -26,7 +26,7 @@ class ExternalCallService {
   userRegister(username, email, phnNumber) {
     console.log('Login-Register user'+phnNumber);
     return axios
-        .post(API_USER_URL + "register",
+        .post("https://139.59.38.45"+API_USER_URL + "register",
         {
             username,
             email,

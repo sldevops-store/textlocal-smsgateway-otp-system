@@ -3,7 +3,7 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 const { LOGIN_HOME_URL} = process.env;
 
-const API_URL = "http://localhost:8080/api/auth/";
+const API_URL = "https://139.59.38.45";
 
 class AuthService {
 
@@ -26,7 +26,7 @@ class AuthService {
 		}
 		if ((accessTokenExp < new Date().getTime()) && (refreshTokenExp > new Date().getTime())) {
 			axios
-				.post('/user-authenticate-service/get-refresh-token', {
+				.post('https://139.59.38.45/user-authenticate-service/get-refresh-token', {
 					withCredentials: true,
           refreshToken: refreshToken
 				})

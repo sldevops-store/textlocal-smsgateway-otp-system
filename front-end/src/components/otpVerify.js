@@ -19,7 +19,7 @@ function OtpVerify(props) {
 	const confirmOtp = () => {
 		localStorage.setItem('phnNumber', `${value.phone}`)
 		axios
-			.post('/user-authenticate-service/verify-otp', {
+			.post('https://139.59.38.45/user-authenticate-service/verify-otp', {
 				phnNumber: `${value.phone}`,
 				hash: `${value.hash}`,
 				otp: `${value.otp}`,
